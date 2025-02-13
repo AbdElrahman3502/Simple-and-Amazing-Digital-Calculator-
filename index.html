@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+   <html lang="en">
+     <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title> Digital Calculator </title>
+       <link rel="icon" href="/icon.png ">
+       <link rel="stylesheet" href="/style.css">
+     </head>
+     <body>
+       <h1 class="title"> Budy Calculator </h1>
+       <div class="all">
+         <div id="container">
+           <b><input type="text" required placeholder="0" id="display" class="display">
+             <hr>
+           </b>
+           <div class="buttons" id="buttons">
+             <button class="btn cbtn" onclick="clr()">C</button>
+             <button class="btn obtn" onclick="del()">D</button>
+             <button class="btn obtn" onclick="additm('**')">^</button>
+             <button class="btn obtn" onclick="additm('/')">÷</button><br>
+             <button class="btn" onclick="additm('7')">7</button>
+             <button class="btn" onclick="additm('8')">8</button>
+             <button class="btn" onclick="additm('9')">9</button>
+             <button class="btn obtn" onclick="additm('*')">×</button><br>
+             <button class="btn" onclick="additm('4')">4</button>
+             <button class="btn" onclick="additm('5')">5</button>
+             <button class="btn" onclick="additm('6')">6</button>
+             <button class="btn obtn" onclick="additm('+')">+</button><br>
+             <button class="btn" onclick="additm('1')">1</button>
+             <button class="btn" onclick="additm('2')">2</button>
+             <button class="btn" onclick="additm('3')">3</button>
+             <button class="btn obtn" onclick="additm('-')">-</button><br>
+             <button class="btn" onclick="additm('0')">0</button>
+             <button class="btn" onclick="additm('.')">.</button>
+             <button class="btn ebtn" onclick="equal()">=</button>
+           </div>
+         </div>
+       </div><br>
+       <script src="main.js"> </script>
+     </body>
+   </html>

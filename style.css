@@ -1,0 +1,84 @@
+:root {
+  --mainC: #6400FF;
+  --mainCofC: #FF0000;
+  --mainCofe: #00FF78D1;
+}
+body {
+  text-align: center;
+  width: 100%;
+}
+.title {
+  width: 25rem;
+  font-size: 3rem;
+  margin: 15px auto;
+  background: linear-gradient(to right bottom, black, #CACACA 90%);
+  background-clip: text;
+  font-family: Sans-Serif;
+  color: transparent;
+}
+.all {
+  font-size: 16pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container {
+  border: solid 2px #000;
+  padding: 20px 15px;
+  text-align: center;
+  border-radius: 20px;
+  background: #00000021;
+}
+.btn {
+  font-size: 25px;
+  padding: 15px 20px;
+  margin: 2px;
+  border-radius: 20px;
+  outline: none;
+  border: solid 2px black;
+  font-family: monospace;
+  background: linear-gradient(#9A9A9A, #FFFFFF);
+  transition: transform .11s linear;
+}
+.display {
+  font-size: 35px;
+  padding: 10px 5px;
+  width: 260px;
+  text-align: right;
+  border-radius: 20px;
+  border: solid 2px black;
+  font-family: monospace;
+  color: var(--mainC);
+  letter-spacing: -3.5px;
+  outline: none;
+  background: linear-gradient(#CACACA, #fff, #fff, #fff, #CACACA);
+}
+.obtn {
+  background: linear-gradient(var(--mainC), #DD00BB);
+  color: white;
+}
+.cbtn {
+  background: linear-gradient(var(--mainCofC), #FFDB00);
+  color: white;
+}
+.ebtn {
+  background: linear-gradient(var(--mainCofe), #92DBFF);
+  padding: 15px 52.5px;
+  border-radius: 200px;
+}
+.display:hover {
+  animation: danimation .2s linear forwards;
+}
+@keyframes danimation {
+  to {
+    transform: scale(1.06);
+  }
+}
+.btn:hover {
+  transform: scale(1.12);
+}
+.tbtn {
+  height: 40px;
+  width: 40px;
+  border-radius: 200px;
+}
